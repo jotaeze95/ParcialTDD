@@ -1,5 +1,7 @@
 package test.PruebaTDD;
 
+import static org.junit.Assert.assertEquals;
+
 /**
  * Hello world!
  *
@@ -10,6 +12,7 @@ public class Bowling
 	int tiro2 = 0;
 	int puntaje = 0;
 	int suma = 0;
+	int Juego[];
 	
 	public Bowling() {
 	}
@@ -30,13 +33,19 @@ public class Bowling
 		  }
 		
 	}
-
-	public void sumarPuntos (int[] frame) {
-		int n = frame.length;
-		for( int i=0; i < n ; i++ )
-			this.suma = frame.length;
+	
+	
+	/*public void tiroErroneo() throws Exception{
+		try {
+			cb.restarSaldo(10);
+						
+		} catch (Exception e) {
+			// TODO: handle exception
+			assertEquals(0,cb.getSaldo());
+		}
 		
-	}
+		
+	}*/
 	
 	
 }
