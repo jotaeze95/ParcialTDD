@@ -7,14 +7,31 @@ import org.junit.Test;
 
 public class BowlingTDD {
 
-	private Bowling bw;
+	private Bowling game;
+	
+	@Before
+	public void setUp() throws Exception {
+		game = new Bowling();
+	}
 
 	@Test
-	public final void FRAME() {
-		int frame[] = {3, 5};
-		bw = new Bowling(frame);
-		int[] resul = bw.getFrame();
-		assertNotNull(resul);
+	public final void frame() {
+		;
+		  for(int frame=1; frame<=10; frame++)
+		  {
+		    game.Juego(0,0,10);
+		  }
+		assertEquals(0, game.puntaje);
+		
+	}
+	
+	@Test
+	public final void Puntaje40() {
+		  for(int frame=1; frame<=10; frame++)
+		  {
+		    game.Frame(2,2);
+		  }
+		assertEquals(40, game.puntaje);
 		
 	}
 
