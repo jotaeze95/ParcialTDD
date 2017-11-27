@@ -15,7 +15,7 @@ public class BowlingTDD {
 	}
 
 	@Test
-	public final void frame() {
+	public final void frameIgual0() {
 		;
 		  for(int frame=1; frame<=10; frame++)
 		  {
@@ -32,6 +32,23 @@ public class BowlingTDD {
 		    game.Frame(2,2);
 		  }
 		assertEquals(40, game.puntaje);
+		
+	}
+	
+	@Test
+	public final void JuegoCompleto() {
+		    game.Frame(2,3);
+		    game.Frame(10,0);
+		    game.Frame(10,0);
+		    game.Frame(4,5);
+		    game.Frame(3,5);
+		    game.Frame(5,4);
+		    game.Frame(5,4);
+		    game.Frame(6,3);
+		    game.Frame(4,3);
+		    game.Frame(10,0);
+		    game.Frame(4,10);
+		assertEquals(100, game.puntaje);
 		
 	}
 
