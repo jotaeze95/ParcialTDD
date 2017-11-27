@@ -12,6 +12,7 @@ public class Bowling
 	int tiro2 = 0;
 	int puntaje = 0;
 	int MayorPuntajePosible = 300;
+	int[][] juego ={{10,0},{10,0},{10,0},{10,0},{10,0},{10,0},{10,0},{10,0},{10,0},{10,0}};
 
 	public Bowling() {
 	}
@@ -32,6 +33,6 @@ public class Bowling
 			System.out.println(Integer.toString(NumFrames));
 		}
 		
-	}	
+	}
 	
 }
